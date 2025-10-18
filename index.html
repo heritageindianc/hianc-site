@@ -6,110 +6,135 @@
   <title>Heritage India Association of NC | Raj Kapoor Fundraiser</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --accent:#c43b3b;
-      --accent-2:#f05454;
-      --ink:#222;
-      --paper:#fafafa;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:var(--ink);
-      background:var(--paper);
-      line-height:1.5;
-      scroll-behavior:smooth;
+    :root {
+      --accent: #c43b3b;
+      --accent-2: #f05454;
+      --ink: #222;
+      --paper: #fafafa;
     }
 
-    /* HERO uses a real <img> so it NEVER crops */
-    .hero{
-      background:#000;
-    }
-    .hero img{
-      width:100%;
-      height:auto;           /* preserves full image */
-      display:block;         /* removes tiny gaps */
+    * {
+      box-sizing: border-box;
     }
 
-    /* CTA under the image so it can't cover text on flyer */
-    .cta{
-      padding:28px 16px 48px;
-      text-align:center;
-      max-width:980px;
-      margin:0 auto;
-    }
-    .cta h1{
-      margin:0 0 6px;
-      font-size:clamp(1.4rem, 2.4vw + 1rem, 2.4rem);
-    }
-    .cta p{
-      margin:0;
-      color:#555;
-      font-size:clamp(0.95rem, 0.6vw + 0.8rem, 1.1rem);
-    }
-    .cta .btn{
-      display:inline-block;
-      margin-top:24px;       /* pushes button LOWER */
-      padding:12px 24px;
-      border-radius:10px;
-      background:var(--accent-2);
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-      transition:transform .15s ease, filter .15s ease, background .2s ease;
-      box-shadow:0 8px 24px rgba(240,84,84,.25);
-    }
-    .cta .btn:hover{ background:var(--accent); transform:translateY(-1px) }
-    .cta .btn:active{ transform:translateY(0); filter:brightness(.95) }
-
-    section{
-      padding:56px 16px;
-      max-width:980px;
-      margin:0 auto;
-      text-align:center;
-    }
-    .card{
-      background:#fff;
-      border-radius:14px;
-      padding:28px;
-      box-shadow:0 12px 32px rgba(0,0,0,.07);
-    }
-    h2{ color:var(--accent); margin-top:0 }
-
-    .tickets{
-      margin:12px 0 4px;
-    }
-    .tickets span{
-      display:inline-block;
-      background:var(--accent);
-      color:#fff;
-      padding:6px 10px;
-      border-radius:8px;
-      margin:4px 6px;
-      font-weight:600;
+    body {
+      margin: 0;
+      font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+      scroll-behavior: smooth;
     }
 
-    footer{
-      background:#222;
-      color:#aaa;
-      text-align:center;
-      padding:22px 14px;
-      font-size:.95rem;
+    /* HERO IMAGE */
+    .hero {
+      background: #000;
     }
-    footer a{ color:var(--accent-2); text-decoration:none }
-    footer a:hover{ text-decoration:underline }
+
+    .hero img {
+      width: 100%;
+      height: auto; /* shows entire image, never crops */
+      display: block;
+    }
+
+    /* EVENT TITLE + BUTTON BELOW IMAGE */
+    .event-intro {
+      text-align: center;
+      padding: 40px 20px 60px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .event-intro h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.4rem);
+      color: var(--accent);
+    }
+
+    .event-intro p {
+      font-size: clamp(1rem, 0.6vw + 0.8rem, 1.1rem);
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background: var(--accent-2);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s ease, filter 0.15s ease, background 0.2s ease;
+      box-shadow: 0 8px 24px rgba(240, 84, 84, 0.25);
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    section {
+      padding: 56px 16px;
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    .tickets {
+      margin: 12px 0 4px;
+    }
+
+    .tickets span {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin: 4px 6px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 22px 14px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
-<body>
 
-  <!-- HERO IMAGE (never cropped) -->
+<body>
+  <!-- HERO IMAGE -->
   <div class="hero">
     <img src="hiancrajkapporflyer.png" alt="Raj Kapoor Fundraiser by Heritage India Association of NC">
   </div>
 
-  <!-- CTA BELOW the flyer so it won't block any text on the image -->
-  <div class="cta" id="tickets">
+  <!-- TITLE + BUTTON BELOW IMAGE -->
+  <div class="event-intro">
     <h1>Raj Kapoor: A Legacy of Music & Romance</h1>
     <p>Presented by Heritage India Association of NC</p>
     <a class="btn" href="https://tugoz.com/rtprajkapoor" target="_blank" rel="noopener">Buy Tickets</a>
@@ -131,7 +156,11 @@
 
   <section>
     <h2>About HIANC</h2>
-    <p>The Heritage India Association of North Carolina is a nonprofit organization dedicated to celebrating Indian culture, music, art, and traditions in the Triangle community. Join us for an evening that blends nostalgia, music, and community spirit.</p>
+    <p>
+      The Heritage India Association of North Carolina is a nonprofit organization (501(c)(3) since 2010)
+      dedicated to celebrating Indian culture, music, art, and traditions in the Triangle community.
+      Join us for an evening that blends nostalgia, music, and community spirit.
+    </p>
   </section>
 
   <section>
